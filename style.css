@@ -1,0 +1,19 @@
+body {
+	background-color: #0e223a;
+     font-family: "Lato", sans-serif;
+}
+
+.orgchart-node {
+	border: 2px solid #bc9c5c;
+	background-color: #0e223a;
+	color: #ffffff;
+
+}
+
+body .google-visualization-orgchart-node-medium, .orgchart-node {
+	font-size: 1.2em;
+}
+
+body .google-visualization-orgchart-linenode > td{
+	border-color: #bc9c5c;
+}
