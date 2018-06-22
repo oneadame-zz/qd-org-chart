@@ -2,14 +2,14 @@ $(function() {
     $("input").on("click", function() {
         chart();
     });
-
+    
+    // Function for creating first object for each node definition
     function createNode(rec) {
         this.v = rec[0];
         this.f = rec[1];
-        //  this.title = rec[2];
-        //  this.pid   = rec[3];
     }
-
+    
+    // Processes pasted-in text, reformats, pushes into array for chart()
     function parseData() {
         var formattedData = [];
         var rows = $("textarea").val().split("\n");
@@ -36,16 +36,11 @@ $(function() {
             data.addColumn('string', 'Manager');
             data.addColumn('string', 'ToolTip');
 
-            emp1 = [{
-                v: '0001',
-                f: 'John Doe<br>Title'
-            }, '', ''];
-
-            // For each orgchart box, provide the name, manager, and tooltip to show.
+            // execute function and return output to addRows
             data.addRows(parseData());
             // Create the chart.
             var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
-            // Draw the chart, setting the allowHtml option to true for the tooltips.
+            // Draw the chart
             chart.draw(data, {
                 allowHtml: true,
                 allowCollapse: true,
