@@ -1,9 +1,30 @@
 body {
 	background-color: #0e223a;
-    	font-family: "Lato", sans-serif;
-    	color: #ffffff;
-    	font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-size: 1.3em;
+    text-align: center
 }
+
+fieldset {
+    margin: 4em;
+    text-align: center;
+    border: 1px solid #bc9c5c;
+    display: inline;
+    padding: .8em;
+}
+
+textarea {
+    margin: 1em 1em;
+}
+
+input[type='button'] {
+    font-size: 1em;
+    border: 1px solid #bc9c5c;
+    display: block;
+    margin: 0 auto .5em;
+}
+
 
 .orgchart-node {
 	border: 2px solid #bc9c5c;
