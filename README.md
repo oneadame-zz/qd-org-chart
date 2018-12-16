@@ -1,5 +1,5 @@
 # qd-org-chart
-Quick implementation for Google Chart's org chart. Uses jQuery and Google Charts, of course.
+Quick implementation for Google Chart's org chart.
 ## How it works
 This project provides a text area in which to paste tab separated text. The tab separated text is parsed by column. The order of columns:
 
