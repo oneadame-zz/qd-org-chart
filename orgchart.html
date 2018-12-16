@@ -1,6 +1,5 @@
 <!DOCTYPE html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -9,10 +8,8 @@
   <body>
       <fieldset>
         <form>
-          <textarea rows="4" cols="50">
-          Paste formatted text here.
-          </textarea><br>
-          <input type="button" class="btn" value="Draw" />
+          <textarea rows="4" cols="50" placeholder="Paste formatted text here."></textarea>
+          <input type="button" class="btn" value="Draw" onclick="drawChart()" />
         </form>
       </fieldset>
     <div id="chart_div"></div>
